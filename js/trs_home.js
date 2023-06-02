@@ -68,53 +68,25 @@ const trs_home = (() => {
     );
   }
 
-  function focus(dom) {
-    const mySwiper = new Swiper(dom + " .swiper-container", {
-      progress: false,
-      loop: true,
-      autoplay: 5000,
-      pagination: dom + " .pagination",
-      paginationClickable: true,
-      onProgressChange(swiper) {
-        for (let i = 0; i < swiper.slides.length; i++) {
-          let slide = swiper.slides[i];
-          let progress = slide.progress;
-          let translate = progress * swiper.width;
-          let opacity = 1 - Math.min(Math.abs(progress), 1);
-          slide.style.opacity = opacity;
-          swiper.setTransform(slide, "translate3d(" + translate + "px,0,0)");
-        }
-      },
-      onTouchStart(swiper) {
-        for (let i = 0; i < swiper.slides.length; i++) {
-          swiper.setTransition(swiper.slides[i], 0);
-        }
-      },
-      onSetWrapperTransition(swiper, speed) {
-        for (let i = 0; i < swiper.slides.length; i++) {
-          swiper.setTransition(swiper.slides[i], speed);
-        }
-      },
-    });
-    $(dom + " .arrow-left").on("click", (e) => {
-      e.preventDefault();
-      mySwiper.swipePrev();
-    });
-    $(dom + " .arrow-right").on("click", (e) => {
-      e.preventDefault();
-      mySwiper.swipeNext();
+  function Tabs(dom) {
+    let index = null;
+    $(dom + " .nav").on("mouseover", "span", function () {
+      index = $(this).index();
+      $(this).addClass("active").siblings().removeClass("active");
+      $(dom)
+        .find(".ctx .item")
+        .eq(index)
+        .addClass("active")
+        .siblings()
+        .removeClass("active");
     });
   }
 
   return {
     init() {
-      // focus('.news')
       nFocus();
       nFocus2();
-      // focus('.state')
-      focus(".banner1");
-      focus(".banner2");
-      focus(".banner3");
+      Tabs(".tabs");
     },
   };
 })();

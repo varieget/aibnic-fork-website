@@ -251,22 +251,18 @@ form {
   position: relative;
   height: 55px;
 }
-.tabs .nav span::after {
-  width: 220px;
-  height: 6px;
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  display: block;
+.tabs .nav span.active {
+  color: #000;
 }
-.tabs .nav span.active::after {
-  content: "";
-  width: 100px;
+.tabs .nav span i {
+  width: 0px;
   height: 6px;
   background: #2e5586;
   transition: 0.3s all;
   margin: 0 auto;
   display: block;
-  left: 50%;
-  transform: translateX(-50%);
+  transform: translateY(21px);
+}
+.tabs .nav span.active i {
+  width: 100px;
 }

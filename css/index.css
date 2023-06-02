@@ -570,6 +570,55 @@
 .state .right .tabs .ctx .item .iconlist ul li a:hover {
   border-color: #015293;
 }
+.state .right .tabs .ctx .item .iconlist2 {
+  margin: 0 -20px;
+  padding-top: 20px;
+}
+.state .right .tabs .ctx .item .iconlist2 li {
+  float: left;
+  width: 50%;
+  background: none;
+  padding: 0;
+}
+.state .right .tabs .ctx .item .iconlist2 li a {
+  display: block;
+  height: 120px;
+  border: #cccccc 1px solid;
+  text-align: center;
+  font-weight: bold;
+  color: #015293;
+  margin: 0 20px;
+  line-height: 118px;
+  font-size: 30px;
+  box-sizing: border-box;
+}
+.state .right .tabs .ctx .item .iconlist2 .index_gwyhlwdc {
+  position: relative;
+}
+.state .right .tabs .ctx .item .iconlist2 .index_gwyhlwdc .btns a {
+  left: 32px;
+  bottom: 28px;
+  height: 30px;
+  font-weight: normal;
+  margin: 0;
+  width: 176px;
+  line-height: 30px;
+  position: absolute;
+  z-index: 1;
+  font-size: 16px;
+  background: #4b8abd;
+  border-radius: 3px;
+  text-align: center;
+  color: #fff;
+}
+.state .right .tabs .ctx .item .iconlist2 .index_gwyhlwdc .btns a:hover {
+  background: #fff;
+  color: #015293;
+}
+.state .right .tabs .ctx .item .iconlist2 .index_gwyhlwdc .btns a + a {
+  left: 222px;
+  width: 76px;
+}
 
 .state .right .list h2 {
   text-align: left;
