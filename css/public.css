@@ -59,6 +59,26 @@ form {
   list-style: none;
 }
 
+@font-face {
+  font-family: "FZZHUNYSK";
+  src: url(FZZHUNYSK.woff) format("woff"), url(FZZHUNYSK.ttf) format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "FZZHUNYSK";
+}
+
+.font_FZZHUNYSK {
+  font-family: "FZZHUNYSK";
+}
+
 .b {
   font-weight: bold;
 }
