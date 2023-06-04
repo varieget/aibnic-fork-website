@@ -286,3 +286,79 @@ h6 {
 .tabs .nav span.active i {
   width: 100px;
 }
+
+/* 分页 */
+.pageInfo {
+  text-align: center;
+  /*font-size: 14px;*/
+  font-size: 16px;
+  position: relative;
+  top: 21px;
+  margin-bottom: 35px;
+}
+.dys_fenye {
+  margin: 10px 0 5px 0;
+}
+.pageInfo a {
+  border: 1px solid #b2b2b2;
+  color: #015092;
+  padding: 0px 6px !important;
+  height: 24px !important;
+  line-height: 24px !important;
+  text-align: center;
+  margin: 2px;
+  display: inline-block !important;
+  cursor: pointer;
+}
+.pageInfo .on {
+  border: none;
+}
+.textNum {
+  border: 1px solid silver;
+  height: 24px;
+  margin: 5px 0;
+  line-height: 24px;
+  text-align: center;
+  font-size: 14px;
+}
+.newsPageBtn {
+  height: 24px;
+  line-height: 24px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.pageGray a {
+  background: #dedede;
+  color: #333 !important;
+  border: 0;
+  display: inline-block !important;
+  padding: 0 8px;
+}
+.pageGray a:hover {
+  text-decoration: none !important;
+}
+.pageGray a.on {
+  background: #0b67a6;
+  color: #fff !important;
+}
+.pageGray span,
+.pageGray font {
+  padding: 0px 8px;
+  height: 24px;
+  line-height: 24px;
+  display: inline-block !important;
+  margin: 0 3px;
+}
+.pageGray span.on {
+  background: #0b67a6;
+  color: #fff !important;
+  border: 0;
+}
+.pageGray .all,
+.pageGray .alls {
+  background: #dedede;
+  color: #333 !important;
+  border: 0;
+  cursor: pointer;
+}
